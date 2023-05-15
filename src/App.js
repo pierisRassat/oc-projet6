@@ -5,7 +5,7 @@ import { AppHeader } from './components/AppHeader.js'
 import { AppFooter } from './components/AppFooter.js'
 import { Home } from './routes/home.js'
 import { About } from './routes/about.js'
-import { Rental } from './routes/rental.js'
+import { RentalWithFallback } from './routes/rental.js'
 import { Error404 } from './routes/error404.js'
 
 const App = () => (
@@ -15,7 +15,7 @@ const App = () => (
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
-        <Route path='/rental/:id' element={<Rental />} />
+        <Route path='/rental/:id' element={<RentalWithFallback />} />
         <Route path='*' element={<Error404 />} />
       </Routes>
       <AppFooter />

@@ -1,12 +1,29 @@
-.about-img-container {
+.about-banner-container {
+  display: flex;
+  position: relative;
+}
+.about-banner-container img {
   display: flex;
   justify-content: center;
   height: 223px;
-  background-image: url(../../../public/images/about-background.png);
+  width: calc(100% - 200px);
+  max-width: 100vw;
   opacity: 1;
-  mix-blend-mode: darken;
   margin: 0 100px;
-  border: 1px solid #FFF;
+  border: 0px solid #FFF;
   border-radius: 25px;
   object-fit: cover;
+}
+.about-banner-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 223px;
+  width: calc(100% - 200px);
+  max-width: 100vw;
+  border: 0px solid #000;
+  border-radius: 25px;
+  background-color: #000;
+  opacity: 0.3;
 }
