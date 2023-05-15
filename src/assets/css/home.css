@@ -1,0 +1,15 @@
+.home-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 223px;
+  background-image: url(../../../public/images/home-background.png);
+  opacity: 1;
+  mix-blend-mode: darken;
+  margin: 0 100px;
+  font-size: 36px;
+  color: #FFF;
+  border: 1px solid #FFF;
+  border-radius: 25px;
+  object-fit: cover;
+}

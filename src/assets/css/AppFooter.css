@@ -1,0 +1,22 @@
+footer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: auto;
+  height: 209px;
+  max-width: 100%;
+  color: var(--foreground-alt);
+  background-color: var(--background-alt-footer);
+  font-weight: 500;
+}
+footer .footer-branding {
+  padding: 20px 0 32px 0;
+}
+/* !!! */
+.footer-branding:first-child {
+  padding-right: 2px;
+}
+footer .footer-branding img {
+  padding-right: 6px;
+}
+

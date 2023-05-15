@@ -1,0 +1,34 @@
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: auto;
+  height: 120px;
+  max-width: 100%;
+  padding: 4px 100px;
+  background-color: var(--background);
+  font-weight: 500;
+}
+header .branding-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 40px 0 0 0;
+}
+/* !!! */
+header .branding-wrapper:first-child {
+  padding-right: 2px!important;
+}
+header .branding-wrapper img {
+  padding-right: 6px;
+}
+header nav ul {
+  display: flex;
+  align-content: flex-start;
+  margin: 57px 0 0 0;
+}
+header nav ul li a {
+  margin: 0 0 0 57px;
+  list-style-type: none;
+  color: var(--primary);
+  text-decoration: none;
+}
