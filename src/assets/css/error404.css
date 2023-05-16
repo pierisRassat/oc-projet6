@@ -1,18 +1,17 @@
 .not-found-wrapper {
-  color: var(--primary);
+    color: var(--primary);
 }
 .not-found-int-message {
-  font-size: 288px;
-  font-weight: bold;
+    font-size: 288px;
+    font-weight: bold;
 }
 .not-found-str-message {
-  font-size: 36px;
-  font-weight: normal;
-  padding: 32px 0 180px 0;
+    padding: 32px 0 180px 0;
+    font-size: 36px;
+    font-weight: normal;
 }
 .back-home-message {
-  font-size: 18px;
-  font-weight: normal;
-  padding: 0 0 160px 0;
+    padding: 0 0 160px 0;
+    font-size: 18px;
+    font-weight: normal;
 }
-

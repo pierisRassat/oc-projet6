@@ -7,6 +7,7 @@ export const About = () => (
       <img src="./images/banners/about-background.png" alt="" />
       <div className="about-banner-overlay"></div>
     </div>
+    <div className="Fullfilling"></div>
   </section>
 )
 

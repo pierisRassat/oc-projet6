@@ -1,6 +1,6 @@
 import logements from '../data/logements.json'
 import '../assets/css/Gallery.css'
-
+ 
 export const Gallery = () => (
   <div className="home-gallery-wrapper">
     {logements.map((logement, index) => (
@@ -12,5 +12,5 @@ export const Gallery = () => (
       </a>
     ))}
   </div>
-)
+) 
 
