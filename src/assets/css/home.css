@@ -38,12 +38,12 @@
         margin-bottom: 22px;
     }
     .home-banner-container img {
-        width: calc(100% - 80px);
+        width: calc(100% - 40px);
         height: 111px;
         margin: auto;
     }
     .home-banner-overlay {
-        width: calc(100% - 80px);
+        width: calc(100% - 40px);
         height: 111px;
     }
     .home-banner-text {
@@ -61,5 +61,10 @@
 @media all and (max-width: 500px) {
     .home-banner-text {
         transform: translate(-85%, -50%);
+    }
+}
+@media all and (max-width: 400px) {
+    .home-banner-text {
+        transform: translate(-70%, -50%);
     }
 }

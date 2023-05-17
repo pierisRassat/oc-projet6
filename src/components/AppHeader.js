@@ -13,10 +13,7 @@ export const AppHeader = () => {
     <header>
       <div className="branding">
         <a href="/" className="branding-wrapper">
-          <img className="branding-elm1" src="./images/logo/k-element.svg" alt="" />
-          <img className="branding-elm2" src="./images/logo/a-house-element.svg" alt="" />
-          <img className="branding-elm3" src="./images/logo/s-element.svg" alt="" />
-          <img className="branding-elm4" src="./images/logo/a-element.svg" alt="" />
+          <img className="branding-logo" src="./images/logo/header-logo.svg" alt="kasa logo" />
         </a>
       </div>
       <nav className="nav">

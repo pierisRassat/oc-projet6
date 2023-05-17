@@ -27,7 +27,20 @@
     background-color: #000;
     transform: translate(-50%, -50%);
 }
-.Fullfilling {
-    width: 100px;
-    height: 3800px;
+.blank-div {
+    height: 171px;
+}
+@media all and (max-width: 768px) {
+    .about-banner-container {
+        margin-bottom: 22px;
+    }
+    .about-banner-container img {
+        width: calc(100% - 40px);
+        height: 111px;
+        margin: auto;
+    }
+    .about-banner-overlay {
+        width: calc(100% - 40px);
+        height: 111px;
+    }
 }

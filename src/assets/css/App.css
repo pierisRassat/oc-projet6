@@ -25,6 +25,16 @@
         max-width: 100vw;
     }
 }
+.drop-down-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.drop-down-button:focus {
+    outline: none;
+}
 @font-face {
     font-family: Montserrat sans-serif;
     src: url(../fonts/Montserrat-VariableFont_wght.woff2) format("woff2"),
