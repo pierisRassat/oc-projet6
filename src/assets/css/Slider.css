@@ -1,0 +1,43 @@
+.rental-carousel-wrapper {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 100%;
+}
+.rental-carousel-wrapper picture {
+    width: 100%;
+}
+.rental-carousel-wrapper picture img {
+    width: 100%;
+    object-fit: cover;
+    border: 0 solid var(--background);
+    border-radius: 25px;
+}
+.rental-carousel-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+.rental-carousel-button:focus {
+    outline: none;
+}
+.rental-carousel-prev-button {
+    position: absolute;
+    top: 50%;
+    left: 24px;
+    z-index: 10;
+}
+.rental-carousel-next-button {
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    z-index: 10;
+}
+@media all and (max-width: 768px) {
+    .rental-carousel-button img {
+        height: 20px;
+    }
+}
+

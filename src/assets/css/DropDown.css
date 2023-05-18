@@ -13,10 +13,19 @@
     color: var(--background);
     border-radius: 5px;
     background-color: var(--primary);
-
     align-items: center;
     flex-flow: nowrap;
     justify-content: space-between;
+}
+.drop-down-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.drop-down-button:focus {
+    outline: none;
 }
 .drop-down-header h3 {
     padding-left: 18px;

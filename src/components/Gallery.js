@@ -14,5 +14,5 @@ export const Gallery = () => (
       </Link>
     ))}
   </div>
-);
+)
 
