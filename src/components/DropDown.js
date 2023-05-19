@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import '../assets/css/DropDown.css'
+import '../assets/css/DropDown.css';
 
 const DropDown = ({ id, title, className, isOpen, content }) => {
   const [isContentVisible, setIsContentVisible] = useState(isOpen);
-  const buttonIcon = isContentVisible ? './images/icons/drop-down-open.svg' : './images/icons/drop-down-close.svg';
+  const buttonIcon = isContentVisible ? '/images/icons/drop-down-open.svg' : '/images/icons/drop-down-close.svg';
 
   const toggleDropDown = () => {
     setIsContentVisible(!isContentVisible);
@@ -19,7 +19,7 @@ const DropDown = ({ id, title, className, isOpen, content }) => {
       </div>
       {isContentVisible && (
         <div className="drop-down-content">
-          <div dangerouslySetInnerHTML={{ __html: content }} />
+          {content}
         </div>
       )}
     </div>
@@ -27,4 +27,3 @@ const DropDown = ({ id, title, className, isOpen, content }) => {
 };
 
 export default DropDown;
-

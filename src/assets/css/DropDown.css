@@ -1,12 +1,11 @@
 .drop-down {
     display: flex;
-
     align-items: center;
     flex-flow: column nowrap;
 }
 .drop-down-header {
     display: flex;
-    width: calc(100% - 417px);
+    width: 100%;
     height: 47px;
     margin-top: 31px;
     border: 0 solid var(--primary);
@@ -23,7 +22,6 @@
     padding: 0;
     cursor: pointer;
 }
-
 .drop-down-button:focus {
     outline: none;
 }
@@ -39,7 +37,7 @@
     z-index: -1;
     top: -10px;
     display: flex;
-    width: calc(100% - 449px);
+    width: calc(100% - 32px);
     padding: 40px 12px 53px 20px;
     border: 0 solid var(--background-alt);
     font-size: 18px;

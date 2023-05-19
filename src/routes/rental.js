@@ -2,6 +2,9 @@ import React, { useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import logements from '../data/logements.json'
 import { Slider } from '../components/Slider.js'
+import { RentalDescription } from '../components/RentalDescription.js'
+import { RentalEquipments } from '../components/RentalEquipments.js'
+import Rating from '../components/Rating.js'
 import '../assets/css/rental.css'
 
 export const Rental = () => {
@@ -38,10 +41,15 @@ export const Rental = () => {
             <div className="rental-host-picture"><img src={logement.host.picture} alt="photo de votre hôte" /></div>
           </div>
           <div className="rental-rating-wrapper">
-          X
+            <Rating rating={logement.rating} />
           </div>
         </div>
       </div>
+      <article className="rental-dropdown">
+        <RentalDescription />
+        <RentalEquipments />
+      </article>
     </section>
   )
 }
+
