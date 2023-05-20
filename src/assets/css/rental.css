@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     width: calc(100% - 200px);
+    height: 55em;
     margin: auto;
 }
 .rental-head-wrapper {
@@ -73,6 +74,9 @@
     align-items: center;
     margin-top: 10px;
 }
+.rental-rating-elements img {
+    padding-left: 15px;
+}
 .rental-dropdown {
     display: flex;
     flex-flow: row nowrap;
@@ -124,6 +128,8 @@
     }
     .rental-rating-elements img {
         width: 13px;
+        padding-right: 7px;
+        padding-left: 0;
     }
     .rental-dropdown {
         flex-flow: column nowrap;

@@ -1,3 +1,6 @@
+.about-main-wrapper {
+    height: calc(100% + 2em);
+}
 .about-banner-container {
     position: relative;
     display: flex;
@@ -31,10 +34,10 @@
     width: calc(100% - 200px);
     margin: auto;
 }
-.blank-div {
-    height: 171px;
-}
 @media all and (max-width: 768px) {
+    .about-main-wrapper {
+        height: 33em;
+    }
     .about-banner-container {
         margin-bottom: 22px;
     }

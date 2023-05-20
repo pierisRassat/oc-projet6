@@ -16,7 +16,6 @@ export const About = () => (
       <AboutRespect />
       <AboutService />
       <AboutSecurity />
-      <div className="blank-div"></div>
     </article>
   </section>
 )
