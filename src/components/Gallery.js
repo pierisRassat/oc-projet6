@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom';
-import logements from '../data/logements.json';
+import { useLogementsData } from './fetchData.js'
 import '../assets/css/Gallery.css';
 
-export const Gallery = () => (
+export const Gallery = () => {
+  const logements = useLogementsData()
+
+  return (
   <div className="home-gallery-wrapper">
     {logements.map((logement, index) => (
       <Link to={`/rental/${logement.id}`} key={logement.id}>
@@ -14,5 +17,6 @@ export const Gallery = () => (
       </Link>
     ))}
   </div>
-)
+  )
+}
 

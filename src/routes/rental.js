@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'
-import { useParams, useNavigate } from 'react-router-dom'
-import logements from '../data/logements.json'
+import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
+import { useLogementsData } from '../components/fetchData.js'
 import { Slider } from '../components/Slider.js'
 import { RentalDescription } from '../components/RentalDescription.js'
 import { RentalEquipments } from '../components/RentalEquipments.js'
@@ -8,18 +8,24 @@ import Rating from '../components/Rating.js'
 import '../assets/css/rental.css'
 
 export const Rental = () => {
-  const { id } = useParams()
-  const navigate = useNavigate()
-  const logement = logements.find(logement => logement.id === id)
+  const logements = useLogementsData()
+  const { id } = useParams();
+  const [shouldRedirect, setShouldRedirect] = useState(false);
+  const logement = logements.find(logement => logement.id === id);
 
   useEffect(() => {
-    if (!logement) {
-      navigate('/error404');
+    if (!logement && logements.length > 0) {
+      setShouldRedirect(true);
     }
-  }, [logement, navigate]);
+  }, [logement, logements]);
+
+  if (shouldRedirect) {
+    window.location.href = '/error404';
+    return null;
+  }
 
   if (!logement) {
-    return null;
+    return <div>Chargement…</div>;
   }
 
   return (
@@ -38,7 +44,7 @@ export const Rental = () => {
         <div className="rental-head-details">
           <div className="rental-host-wrapper">
             <div className="rental-host-name">{logement.host.name}</div>
-            <div className="rental-host-picture"><img src={logement.host.picture} alt="photo de votre hôte" /></div>
+            <div className="rental-host-picture"><img src={logement.host.picture} alt="votre hôte" /></div>
           </div>
           <div className="rental-rating-wrapper">
             <Rating rating={logement.rating} />
@@ -46,7 +52,7 @@ export const Rental = () => {
         </div>
       </div>
       <article className="rental-dropdown">
-        <RentalDescription />
+         <RentalDescription />
         <RentalEquipments />
       </article>
     </section>

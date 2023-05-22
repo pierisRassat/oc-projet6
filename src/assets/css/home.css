@@ -59,21 +59,8 @@
         width: 220px;
         text-align: left;
         font-size: 24px;
-        transform: translate(-120%, -50%);
-    }
-}
-@media all and (max-width: 600px) {
-    .home-banner-text {
-        transform: translate(-95%, -50%);
-    }
-}
-@media all and (max-width: 500px) {
-    .home-banner-text {
-        transform: translate(-85%, -50%);
-    }
-}
-@media all and (max-width: 400px) {
-    .home-banner-text {
-        transform: translate(-70%, -50%);
+        top: 50%;
+        left: 36px;
+        transform: none;
     }
 }

@@ -1,9 +1,10 @@
 import React from 'react';
-import DropDown from './DropDown.js';
-import logements from '../data/logements.json'
 import { useParams } from 'react-router-dom'
+import DropDown from './DropDown.js';
+import { useLogementsData } from './fetchData.js'
 
 export const RentalDescription = () => {
+  const logements = useLogementsData()
   const { id } = useParams()
   const logement = logements.find((logement) => logement.id === id)
 

@@ -16,13 +16,14 @@
 }
 .home-gallery-card {
     position: relative;
+    aspect-ratio: 1/1;
 }
 .home-gallery-card img {
     width: auto;
-    height: 100%;
+    height: auto;
+    min-height: 100%;
     max-width: 100%;
     margin: auto;
-    aspect-ratio: 1/1;
     border: 0 solid var(--foreground-alt);
     border-radius: 10px;
     object-fit: cover;
@@ -48,7 +49,7 @@
     display: flex;
     width: auto;
     font-size: 18px;
-    line-height: 26px;
+    line-height: 142.6%;
     text-align: left;
     color: var(--foreground-alt);;
     align-items: flex-end;
@@ -69,11 +70,10 @@
         grid-gap: 20px;
         background-color: var(--background);
     }
-    .home-gallery-card img {
-        width: 100vw;
+    .home-gallery-card {
         aspect-ratio: 1.31/1;
     }
-    .home-gallery-card-overlay {
-        aspect-ratio: 1.31/1;
+    .home-gallery-card img {
+        width: 100%;
     }
 }
