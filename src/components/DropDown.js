@@ -14,7 +14,7 @@ const DropDown = ({ id, title, className, isOpen, content }) => {
       <div className="drop-down-header">
         <h3>{title}</h3>
         <button className="drop-down-button" onClick={toggleDropDown}>
-          <img src={buttonIcon} alt={isContentVisible ? 'Fermer' : 'Ouvrir'} />
+          <img src={buttonIcon} alt={isContentVisible ? 'Fermer' : 'Ouvrir'} width="24" height="14" />
         </button>
       </div>
       {isContentVisible && (

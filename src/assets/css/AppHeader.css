@@ -33,6 +33,12 @@ header nav ul li a {
 .nav-link.active a {
     text-decoration: underline;
 }
+@media all and (max-width: 1098px) {
+    header {
+        padding: 4px 50px;
+    }
+}
+
 @media all and (max-width: 768px) {
     header {
         height: 80px;
@@ -44,7 +50,10 @@ header nav ul li a {
     }
     header .branding-wrapper {
         margin: 20px 0 0 0;
-        height: 40px;
+    }
+    header .branding-logo {
+        width: 145px;
+        height: 47px;
     }
     header nav ul li a {
         padding-left: 12px;

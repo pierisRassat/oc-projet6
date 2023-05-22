@@ -13,7 +13,7 @@ export const AppHeader = () => {
     <header>
   <div className="branding">
     <Link to="/" className="branding-wrapper">
-      <img className="branding-logo" src={`${process.env.PUBLIC_URL}/images/logo/header-logo.svg`} alt="kasa logo" />
+      <img className="branding-logo" src={`${process.env.PUBLIC_URL}/images/logo/header-logo.svg`} alt="kasa logo" width="210" height="68" />
     </Link>
   </div>
   <nav className="nav">

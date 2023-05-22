@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     width: calc(100% - 200px);
-    height: 55em;
+    height: 100%;
     margin: auto;
 }
 .rental-head-wrapper {
@@ -30,14 +30,14 @@
 .rental-tags-wrapper {
     display: flex;
     flex-flow: row wrap;
-    margin-top: 20px;
 }
 .rental-tag {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 115px;
+    width: 155px;
     height: 25px;
+    margin-top: 20px;
     margin-right: 10px;
     color: var(--background);
     background-color: var(--primary);
@@ -70,6 +70,7 @@
 }
 .rental-rating-wrapper {
     display: flex;
+    flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: center;
     margin-top: 10px;
@@ -82,6 +83,7 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     width: 100%;
+    min-height: 19em;
 }
 #drop-down-5 {
     margin-right: 38px;
@@ -91,6 +93,11 @@
 }
 .rental-dropdown > .drop-down {
     width: 100%;
+}
+@media all and (max-width: 1098px) {
+    .rental-main-wrapper {
+        width: calc(100% - 100px);
+    }
 }
 @media all and (max-width: 768px) {
     .rental-main-wrapper {
@@ -104,11 +111,11 @@
         font-size: 14px;
     }
     .rental-tags-wrapper {
-        margin-top: 10px;
     }
     .rental-tag {
-        width: 84px;
+        width: 145px;
         height: 18px;
+        margin-top: 10px;
         font-size: 14px;
         border-radius: 5px;
     }
@@ -133,6 +140,7 @@
     }
     .rental-dropdown {
         flex-flow: column nowrap;
+        justify-content: flex-start;
         width: calc(100vw - 20px);
     }
     #drop-down-5 {

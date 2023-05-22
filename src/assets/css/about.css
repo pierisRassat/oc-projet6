@@ -1,5 +1,5 @@
 .about-main-wrapper {
-    height: calc(100% + 2em);
+    height: 100%;
 }
 .about-banner-container {
     position: relative;
@@ -31,12 +31,25 @@
     transform: translate(-50%, -50%);
 }
 .about-drop-down-elements {
-    width: calc(100% - 200px);
+    width: calc(100% - 317px);
+    height: 100%;
+    min-height: 33em;
     margin: auto;
+}
+@media all and (max-width: 1098px) {
+    .about-banner-container img {
+        width: 100%;
+        margin: 0 50px;
+    }
+    .about-banner-overlay {
+        width: calc(100% - 100px);
+    }
+    .about-main-wrapper {
+    }
 }
 @media all and (max-width: 768px) {
     .about-main-wrapper {
-        height: 33em;
+        height: 100%;
     }
     .about-banner-container {
         margin-bottom: 22px;
@@ -52,6 +65,7 @@
     }
     .about-drop-down-elements {
         width: calc(100% - 20px);
-        margin: auto;
+        height: auto;
+        min-height: 25em;
     }
 }
