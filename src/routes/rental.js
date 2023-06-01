@@ -25,7 +25,7 @@ export const Rental = () => {
   }
 
   if (!logement) {
-    return <div>Chargement…</div>;
+    return <div className="loading">Chargement…</div>;
   }
 
   return (

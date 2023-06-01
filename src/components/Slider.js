@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import '../assets/css/Slider.css';
-import { useLogementsData } from './fetchData.js'
+import { useLogementsData } from './fetchData.js';
 
 export const Slider = () => {
-  const logements = useLogementsData()
+  const logements = useLogementsData();
   const { id } = useParams();
   const logement = logements.find((logement) => logement.id === id);
 
   const pictures = logement?.pictures || [];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  if ( pictures.length <= 1) {
+  if (pictures.length <= 1) {
     return (
       <div className="rental-carousel-wrapper">
         <picture>
-          <img src={pictures[0]} alt="" width="1240px" height="415px" />
+          <img src={pictures[0]} alt="logement" width="1240px" height="415px" />
         </picture>
       </div>
     );
@@ -33,6 +33,9 @@ export const Slider = () => {
     );
   };
 
+  const currentImageNumber = currentImageIndex + 1;
+  const totalImagesNumber = pictures.length;
+
   return (
     <div className="rental-carousel-wrapper">
       <button
@@ -47,7 +50,7 @@ export const Slider = () => {
         />
       </button>
       <picture>
-        <img src={pictures[currentImageIndex]} alt="" width="1240px" height="415px" />
+        <img src={pictures[currentImageIndex]} alt="logement" width="1240px" height="415px" />
       </picture>
       <button
         className="rental-carousel-button rental-carousel-next-button"
@@ -60,6 +63,9 @@ export const Slider = () => {
           height="79"
         />
       </button>
+      <div className="rental-carousel-counter">
+        {currentImageNumber}/{totalImagesNumber}
+      </div>
     </div>
   );
 };

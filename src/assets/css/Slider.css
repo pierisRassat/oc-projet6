@@ -40,6 +40,12 @@
     right: 24px;
     z-index: 2;
 }
+.rental-carousel-counter {
+    color: var(--background);
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+}
 @media all and (max-width: 768px) {
     .rental-carousel-wrapper picture img {
         width: 100%;
